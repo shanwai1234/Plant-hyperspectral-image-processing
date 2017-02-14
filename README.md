@@ -9,4 +9,6 @@ wavelength_foldid.csv is the file showing images in the folder corresponding to 
 
 HYP_SV_90_far is the folder including images of one single plant in one day ranging from 0_0_0.png to 244_0_0.png, first image just tested from RGB channel for one image, and the second shows the information for each capturing time, but both of them are not used for calculating the average intensity.
 
-test.csv is the demo file to show the result of wavelength and its corresponding intensity for each plant. 
+test.csv is the demo file to show the result of wavelength and its corresponding intensity for each plant.
+
+try_far.jpg is the binary image printed out to see the binarization, but this is just a check and not necessary for the code. 
