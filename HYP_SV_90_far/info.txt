@@ -1,0 +1,3 @@
+Camera label: HYP SV 90
+MM pro pixel X: 0
+MM pro pixel Y: 0
