@@ -11,4 +11,8 @@ HYP_SV_90_far is the folder including images of one single plant in one day rang
 
 test.txt is the demo file to show the result of wavelength and its corresponding intensity for each plant.
 
-try_far.jpg is the binary image printed out to see the binarization, but this is just a check and not necessary for the code. 
+binary.jpg is the binary image printed out to see the binarization, but this is just a check and not necessary for the code.
+
+stem.jpg is the binary image with only stem printer out to see the effect, while also a check file and not necessary for the code.
+
+final.jpg is the merged binary image for whole plant without the stem part, and also is a check file.
