@@ -3,7 +3,7 @@
 This is the python-opencv code used for generating the average intensity of plant area under wavelength ranging from 546-1,700 nm.
 opencv_hyperspectral.py is the original code.
 
-The demo command to run this code is "python opencv_hyperspectral.py test.csv wavelength_foldid.csv"
+The demo command to run this code is "python opencv_hyperspectral.py test.txt wavelength_foldid.txt"
 
 wavelength_foldid.txt is the file showing images in the folder corresponding to actual wavelength, and they are all same in UNL corn phenomap project.
 
