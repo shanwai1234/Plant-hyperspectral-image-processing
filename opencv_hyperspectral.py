@@ -128,8 +128,9 @@ for i in myfold:
 		w = len(n)
 		for m in n:
 			total += m
-	avg = total/(l*w)
-	mdict[name] = avg
+#	avg = total/(l*w)
+#	mdict[name] = avg
+	mdict[name] = total
 
 # print out the average intensity of each file in each image folder
 for i in range(2,245):
