@@ -120,7 +120,6 @@ for i in myfold:
 	t2 = np.multiply(t1,tmg)
 	total = 0
 	plant = tmg.sum()
-	# l*m is the total number of pixels inside one image
 	for n in t2:
 		for m in n:
 			total += m
