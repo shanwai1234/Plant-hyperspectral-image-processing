@@ -127,7 +127,7 @@ for i in myfold:
 		for m in n:
 			total += m
 	avg = total/plant
-	mdict[name] = avg
+	mdict[name] = avg*255
 
 # print out the average intensity of each file in each image folder
 for i in range(2,245):
