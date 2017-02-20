@@ -104,7 +104,6 @@ cv2.imwrite('binary.jpg',mmg)
 cv2.imwrite('stem.jpg',rmg)
 cv2.imwrite('final.jpg',tmg)
 
-tmg = tmg/255.0
 myfold = os.listdir('HYP_SV_90_far')
 mdict = {}
 for i in myfold:
@@ -117,9 +116,8 @@ for i in myfold:
 	t = cv2.imread("HYP_SV_90_far/{0}".format(i))
 	t = t.astype(np.float)
 	t1 = t[:,:,0]
-	t3 = t1/255.0
 	# multiply each files in the folder with the binarized image. For each pixel, dividing 255 to make each pixel in 0~1 
-	t2 = np.multiply(t1/255.0,tmg)
+	t2 = np.multiply(t1,tmg)
 	total = 0
 	plant = tmg.sum()
 	# l*m is the total number of pixels inside one image
@@ -127,7 +125,7 @@ for i in myfold:
 		for m in n:
 			total += m
 	avg = total/plant
-	mdict[name] = avg*255
+	mdict[name] = avg
 
 # print out the average intensity of each file in each image folder
 for i in range(2,245):
