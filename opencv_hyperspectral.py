@@ -34,7 +34,7 @@ def rmstem(pic1,pic2):
 				n.append(0)
 			else:
 				ratio = pic1[i,j]/pic2[i,j]
-				if ratio > 1.4:
+				if ratio > 1.2:
 					n.append(255)
 				else:
 					n.append(0)
@@ -105,7 +105,7 @@ cv2.imwrite('stem.jpg',rmg)
 cv2.imwrite('final.jpg',tmg)
 
 tmg = tmg/255.0
-myfold = os.listdir("HYP_SV_90_far")
+myfold = os.listdir('HYP_SV_90_far')
 mdict = {}
 for i in myfold:
 	# first two images are not useful and just skip them
@@ -121,16 +121,13 @@ for i in myfold:
 	# multiply each files in the folder with the binarized image. For each pixel, dividing 255 to make each pixel in 0~1 
 	t2 = np.multiply(t1/255.0,tmg)
 	total = 0
-	l = 0
+	plant = tmg.sum()
 	# l*m is the total number of pixels inside one image
 	for n in t2:
-		l += 1
-		w = len(n)
 		for m in n:
 			total += m
-#	avg = total/(l*w)
-#	mdict[name] = avg
-	mdict[name] = total
+	avg = total/plant
+	mdict[name] = avg
 
 # print out the average intensity of each file in each image folder
 for i in range(2,245):
