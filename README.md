@@ -1,5 +1,8 @@
 # Plant hyperspectral image processing in python-opencv for Lemnatec system
 =======
+DEC-16-19
+Efficiently to merge all individual hyperspectral images into one numpy array could be found in https://github.com/shanwai1234/HYPprocessing
+
 This is the python-opencv code used for generating the average intensity of plant area under wavelength ranging from 546-1,700 nm.
 opencv_hyperspectral.py is the original code.
 
